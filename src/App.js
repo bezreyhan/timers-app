@@ -45,7 +45,6 @@ class App extends Component {
           ) : (
             <h3>Create a Timer</h3>
           )}
-          {}
         </div>
         <TimerCreator onCreate={this.createTimer} />
       </div>
