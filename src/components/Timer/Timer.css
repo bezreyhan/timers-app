@@ -1,0 +1,34 @@
+.Timer {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.Timer-card {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.Timer-name {
+  align-self: flex-start;
+  font-size: 16px;
+}
+
+.Timer-time {
+  align-self: center;
+  font-size: 16px;
+}
+
+.Timer-deleteIcon {
+  align-self: flex-end;
+  height: 15px;
+}
+
+.Timer-deleteIcon:hover {
+  cursor: pointer;
+}

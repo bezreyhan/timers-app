@@ -1,0 +1,24 @@
+.Input-input {
+  box-sizing: border-box;
+  border: 1px solid #c2c2c2;
+  box-shadow: 1px 1px 4px #ebebeb;
+  border-radius: 3px;
+  padding: 7px;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.Input-input:focus {
+  border: 1px solid #4caf50;
+}
+
+.Input-error .Input-input {
+  border-color: tomato;
+}
+
+.Input-error .Input-label {
+  color: tomato;
+}

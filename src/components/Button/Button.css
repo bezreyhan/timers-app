@@ -1,0 +1,30 @@
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.Button:hover {
+  cursor: pointer;
+}
+
+.Button-red {
+  border-color: tomato;
+  color: tomato;
+}
+
+.Button-green {
+  border-color: #4caf50;
+  color: #4caf50;
+}
+
+.Button-blue {
+  border-color: #2196f3;
+  color: #2196f3;
+}

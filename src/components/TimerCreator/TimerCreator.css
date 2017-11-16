@@ -1,0 +1,49 @@
+.TimerCreator {
+  width: 400px;
+  text-align: center;
+}
+
+.TimerCreator-openBtn {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.TimerCreator-openBtn:hover {
+  cursor: pointer;
+}
+
+.TimerCreator-form {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.TimerCreator-formInput {
+  margin-top: 5px;
+}
+
+.TimerCreator-formBtns {
+  display: flex;
+  margin-top: 10px;
+}
+
+.TimerCreator-formBtn {
+  flex: 1;
+}
+
+.TimerCreator-formBtn:first-child {
+  border-right: none;
+  border-bottom-right-radius: 0;
+}
+
+.TimerCreator-formBtn:last-child {
+  border-bottom-left-radius: 0;
+}
