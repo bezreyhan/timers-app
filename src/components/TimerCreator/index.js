@@ -56,14 +56,14 @@ export default class TimerCreator extends Component {
             />
             <div className="TimerCreator-formBtns">
               <Button
-                className="TimerCreator-formBtn"
+                className="TimerCreator-createBtn"
                 blue
                 onClick={this.createTimer}
               >
                 Create
               </Button>
               <Button
-                className="TimerCreator-formBtn"
+                className="TimerCreator-cancelBtn"
                 red
                 onClick={this.hideForm}
               >

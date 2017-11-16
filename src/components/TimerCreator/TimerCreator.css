@@ -35,15 +35,13 @@
   margin-top: 10px;
 }
 
-.TimerCreator-formBtn {
+.TimerCreator-createBtn {
+  border-right: none;
+  border-bottom-right-radius: 0;
   flex: 1;
 }
 
-.TimerCreator-formBtn:first-child {
-  border-right: none;
-  border-bottom-right-radius: 0;
-}
-
-.TimerCreator-formBtn:last-child {
+.TimerCreator-cancelBtn {
   border-bottom-left-radius: 0;
+  flex: 1;
 }
