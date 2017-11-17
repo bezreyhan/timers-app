@@ -54,7 +54,7 @@ export default class Timer extends Component {
     return (
       <div className="Timer">
         <div className="Timer-card">
-          <div className="Timer-name">{this.props.title}</div>
+          <div className="Timer-title">{this.props.title}</div>
           <div className="Timer-time">
             {getTimeFromSeconds(this.state.seconds)}
           </div>

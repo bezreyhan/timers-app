@@ -4,9 +4,8 @@ import Input from '../';
 
 storiesOf('Input', module)
   .add('default', () => <InputWrapper />)
-  .add('with value', () => (
-    <InputWrapper value="bez@openlistings.com" label="Email" />
-  ))
+  .add('with value', () => <InputWrapper value="bez@openlistings.com" />)
+  .add('with label', () => <InputWrapper label="Email" />)
   .add('with error', () => (
     <InputWrapper value="Woops" error="Invalid Email" />
   ));

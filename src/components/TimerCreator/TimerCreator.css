@@ -4,7 +4,7 @@
 }
 
 .TimerCreator-openBtn {
-  border: 1px solid black;
+  border: 1px solid lightgray;
   padding: 5px;
   text-align: center;
   display: inline-block;
@@ -20,7 +20,7 @@
 .TimerCreator-form {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid lightgray;
   padding: 20px;
   border-radius: 5px;
   text-align: left;
