@@ -1,11 +1,5 @@
 import { configure } from '@storybook/react';
 
-// function loadStories() {
-//   require('../src/stories');
-// }
-
-// configure(loadStories, module);
-
 /*
  * Load all files in the src directory that follow the naming convention: *.story.(ts|tsx)
  * Examples:

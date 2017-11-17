@@ -4,12 +4,16 @@ import './Timer.css';
 import DeleteIcon from '../../assets/icons/delete.png';
 import Button from '../Button';
 
+function addZero(number) {
+  return `0${number}`.slice(-2);
+}
+
 export function getTimeFromSeconds(seconds) {
   const s = seconds % 60;
   const minutes = Math.floor(seconds / 60);
   const m = minutes % 60;
   const h = Math.floor(minutes / 60);
-  return `${h}:${m}:${s}`;
+  return `${addZero(h)}:${addZero(m)}:${addZero(s)}`;
 }
 
 export default class Timer extends Component {
@@ -21,22 +25,22 @@ export default class Timer extends Component {
       seconds: 0,
       on: false
     };
-    this.handleStartTimer = this.handleStartTimer.bind(this);
-    this.handleStopTimer = this.handleStopTimer.bind(this);
-    this.startTimer = this.startTimer.bind(this);
+    this.runTimer = this.runTimer.bind(this);
+    this.stopTimer = this.stopTimer.bind(this);
+    this.incrementTime = this.incrementTime.bind(this);
   }
 
-  handleStartTimer() {
+  runTimer() {
     this.setState({ on: true });
-    this.timerId = window.setInterval(this.startTimer, 1000);
+    this.timerId = window.setInterval(this.incrementTime, 1000);
   }
 
-  handleStopTimer() {
+  stopTimer() {
     this.setState({ on: false });
-    window.clearInterval(this.timerId);
+    this.timerId = window.clearInterval(this.timerId);
   }
 
-  startTimer() {
+  incrementTime() {
     let { seconds } = this.state;
     seconds += 1;
     this.setState({ seconds });
@@ -61,11 +65,11 @@ export default class Timer extends Component {
           />
         </div>
         {this.state.on ? (
-          <Button red onClick={this.handleStopTimer}>
+          <Button red onClick={this.stopTimer}>
             Stop
           </Button>
         ) : (
-          <Button green onClick={this.handleStartTimer}>
+          <Button green onClick={this.runTimer}>
             Start
           </Button>
         )}

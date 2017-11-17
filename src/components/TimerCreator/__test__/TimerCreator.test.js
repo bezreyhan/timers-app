@@ -23,7 +23,7 @@ describe('<TimerCreator />', () => {
     beforeEach(() => {
       wrapper = shallow(<TimerCreator onCreate={mockHandleCreate} />);
       wrapper.instance().state.title = '';
-      wrapper.instance().createTimer({ preventDefault: () => {} });
+      wrapper.instance().createTimer({ preventDefault() {} });
     });
 
     it('does not call props.onCreate', () => {
