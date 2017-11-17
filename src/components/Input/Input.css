@@ -1,3 +1,5 @@
+@import '../../variables.css';
+
 .Input-input {
   box-sizing: border-box;
   border: 1px solid #c2c2c2;
@@ -12,13 +14,13 @@
 }
 
 .Input-input:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--color-blue);
 }
 
 .Input-error .Input-input {
-  border-color: tomato;
+  border-color: var(--color-red);
 }
 
 .Input-error .Input-label {
-  color: tomato;
+  color: var(--color-red);
 }

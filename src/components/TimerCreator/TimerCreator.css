@@ -1,10 +1,12 @@
+@import '../../variables.css';
+
 .TimerCreator {
   width: 400px;
   text-align: center;
 }
 
 .TimerCreator-openBtn {
-  border: 1px solid lightgray;
+  border: 1px solid var(--color-lightgray);
   padding: 5px;
   text-align: center;
   display: inline-block;
@@ -20,7 +22,7 @@
 .TimerCreator-form {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid lightgray;
+  border: 1px solid var(--color-lightgray);
   padding: 20px;
   border-radius: 5px;
   text-align: left;

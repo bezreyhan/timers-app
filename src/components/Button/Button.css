@@ -1,3 +1,5 @@
+@import '../../variables.css';
+
 .Button {
   display: flex;
   justify-content: center;
@@ -15,16 +17,16 @@
 }
 
 .Button-red {
-  border-color: tomato;
-  color: tomato;
+  border-color: var(--color-red);
+  color: var(--color-red);
 }
 
 .Button-green {
-  border-color: #4caf50;
-  color: #4caf50;
+  border-color: var(--color-green);
+  color: var(--color-green);
 }
 
 .Button-blue {
-  border-color: #2196f3;
-  color: #2196f3;
+  border-color: var(--color-blue);
+  color: var(--color-blue);
 }
